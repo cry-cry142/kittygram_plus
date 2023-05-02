@@ -27,7 +27,7 @@ class Cat(models.Model):
         null=True
     )
     achievements = models.ManyToManyField('Achievement',
-                                          through='AchievementCat'git)
+                                          through='AchievementCat')
 
     def __str__(self):
         return self.name
